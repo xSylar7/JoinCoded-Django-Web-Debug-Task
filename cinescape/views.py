@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from .models import Category, Movies
 
 def movie_list_view(request):
-    categories = Category.object.all()
+    categories = Category.objects.all()
     movies = Movies.objects.all()
     new_movies_list = []
     for movie in movies:

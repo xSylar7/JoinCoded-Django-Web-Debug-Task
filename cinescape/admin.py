@@ -1,15 +1,16 @@
 from django.contrib import admin
-from .models import (
+from cinescape.models import (
     Category, 
     Movies, 
     Location, 
-    Theather)
+    Theater)
+admin.site.register([Category,Movies,Location,Theater])
 
-admin.site.register(
-    [
-        Category, 
-        Movies, 
-        Location, 
-        Theather,
-    ]
-)
+# admin.site.register(
+#     [
+#         Category, 
+#         Movies, 
+#         Location, 
+#         Theater,
+#     ]
+# )

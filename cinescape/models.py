@@ -7,7 +7,7 @@ class Category(models.Model):
         ADULT_GUARDIAN = "R"
         RESTRICTED = "X"
 
-    rating = models.CharField(max_length=1, choices=CategoryType)
+    rating = models.CharField(max_length=2, choices=CategoryType.choices)
     name = models.CharField(max_length=50)
 
     def __str__(self):
